@@ -13,17 +13,7 @@ const Details = () => {
         { id: 'yal 01204', name: 'Petit Paquet', hash: '12345678', revealed: false },
     ]);
 
-    const handleRevealHash = (itemId) => {
-        const code = prompt("Enter Security Code (Mock: 1234):");
 
-        if (code === "1234") {
-            setItems(items.map(item =>
-                item.id === itemId ? { ...item, revealed: true } : item
-            ));
-        } else {
-            alert("Incorrect Code!");
-        }
-    };
 
     return (
         <div className="details-container">
@@ -47,18 +37,6 @@ const Details = () => {
                                     <span className="item-name">{item.name}</span>
                                 </div>
 
-                                <div className="hash-section">
-                                    {item.revealed ? (
-                                        <span className="hash-code">{item.hash}</span>
-                                    ) : (
-                                        <button
-                                            className="btn-hash"
-                                            onClick={() => handleRevealHash(item.id)}
-                                        >
-                                            <span>🔒</span> Voir Hash
-                                        </button>
-                                    )}
-                                </div>
                             </li>
                         ))}
                     </ul>
