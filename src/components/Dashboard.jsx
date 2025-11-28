@@ -36,7 +36,12 @@ const Dashboard = () => {
         <div className="dashboard-container">
             <header className="dashboard-header">
                 <h1>Delivery Dashboard</h1>
-                <span className="badge">Admin Panel</span>
+                <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+                    <button className="btn-map" onClick={() => navigate('/map')}>
+                        Map
+                    </button>
+                    <span className="badge">Admin Panel</span>
+                </div>
             </header>
 
             <div className="dashboard-table">
