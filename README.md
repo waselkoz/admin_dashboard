@@ -1,16 +1,74 @@
-# React + Vite
+# 🚀 FastTrack Delivery Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance dashboard for managing delivery fleets, tracking drivers in real-time, and analyzing logistics performance. Built with **React**, **Vite**, and **Mapbox GL JS**, featuring a stunning **Glassmorphism** UI.
 
-Currently, two official plugins are available:
+![FastTrack Dashboard Preview](https://via.placeholder.com/800x400?text=FastTrack+Dashboard+Preview)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Key Features
 
-## React Compiler
+- **📊 Interactive Dashboard**: Real-time overview of active drivers, deliveries, and efficiency stats.
+- **🗺️ Live Map Tracking**: Real-time driver location tracking with route visualization and custom markers.
+- **📈 Advanced Analytics**: Interactive charts with tooltips, time period toggles (Week/Month), and summary metrics.
+- **⚙️ Customizable Settings**: Personalize the experience with dynamic accent colors (Red, Blue, Green, Purple) and notification preferences.
+- **👤 User Profile**: Editable user profile with local persistence.
+- **💬 Driver Chat**: Mock chat interface for communicating with drivers.
+- **📥 Data Export**: Export delivery data to CSV for external analysis.
+- **🎨 Glassmorphism UI**: A premium, modern dark-themed design with blurred backgrounds and neon accents.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend**: React 18, Vite, React Router DOM
+- **Styling**: Vanilla CSS (Glassmorphism Design System)
+- **Maps**: Mapbox GL JS
+- **Real-time**: Socket.io-client
+- **Notifications**: React Hot Toast
+- **Backend**: Node.js, Express, Socket.io (Mock Server)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Installation & Setup
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/fasttrack-dashboard.git
+cd fasttrack-dashboard
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Start the Backend Server
+The backend simulates driver movements and handles API requests.
+```bash
+node server.js
+```
+*Server runs on http://localhost:3000*
+
+### 4. Start the Frontend Development Server
+Open a new terminal window:
+```bash
+npm run dev
+```
+*App runs on http://localhost:5173*
+
+## 🖥️ Usage
+
+1.  **Dashboard**: View the fleet overview. Use the search bar to find specific drivers or sacs.
+2.  **Add Driver**: Enter a name or ID (e.g., "Driver X") in the "Add Name/ID" field and click **+ Add**.
+3.  **Assign Sac**: Click "Assign" on a driver row to link a Sac ID.
+4.  **Live Map**: Navigate to the "Live Map" tab to see drivers moving in real-time. Click a marker to see details.
+5.  **Analytics**: Check the "Delivery Volume" chart. Hover over bars for details and toggle between Week/Month views.
+6.  **Settings**: Go to Settings to change the accent color or edit your profile.
+7.  **Export**: Click "Export CSV" on the dashboard to download your data.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License.
