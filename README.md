@@ -1,8 +1,7 @@
 # 🚀 FastTrack Delivery Dashboard
 
 A modern, high-performance dashboard for managing delivery fleets, tracking drivers in real-time, and analyzing logistics performance. Built with **React**, **Vite**, and **Mapbox GL JS**, featuring a stunning **Glassmorphism** UI.
-
-![FastTrack Dashboard Preview](https://via.placeholder.com/800x400?text=FastTrack+Dashboard+Preview)
+just to precise this is not a production ready app, it is just a proof of concept but it could work with the addition of RFID and gps trackers to the delivery vehicles.
 
 ## ✨ Key Features
 
